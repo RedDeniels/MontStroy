@@ -6,7 +6,6 @@
 *.pdf
 *.psd
 *.sublime*
-build/
 source/sass/normalize-sass/
 source/js/svg4everybody.js
 node_modules/

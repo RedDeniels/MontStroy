@@ -7,6 +7,41 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+            <img class="main-nav__logo-image" src="img/logo.png" width="86" height="37" alt="">
+          </picture>
+        </a>
+        <input class="main-nav__toggle visual-hidden" id="main-toggle" type="checkbox" name="toggle">
+        <label class="main-nav__toggle-button" for="main-toggle">
+          Меню
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+          <span class="toggle__line"></span>
+        </label>
+        <ul class="main-nav__list">
+          <li main-nav__item>
+            <a class="main-nav__link main-nav__link--desktop" href="#">Главная</a>
+          </li>
+          <li main-nav__item>
+            <a class="main-nav__link" href="#">Услуги</a>
+          </li>
+          <li main-nav__item>
+            <a class="main-nav__link" href="#">Проекты</a>
+          </li>
+          <li main-nav__item>
+            <a class="main-nav__link" href="#">Партнеры</a>
+          </li>
+          <li main-nav__item>
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <span class="main-nav__phone"><b>+7 (495) 452-67-23</b></span>
+        <a class="button button--scroll main-nav__feedback">Обратная связь</a>
+      </nav>
+    </header>
   </body>
 </html>

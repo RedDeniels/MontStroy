@@ -22,14 +22,17 @@ $grey-hole: #626262;
 $grey-black: #303030;
 $grey-dark: #4c4c4c;
 $grey-highest: #333333;
+$grey-gloomy: #383838;
 $grey-hight: #707070;
 $grey-shark: #aeadad;
+$grey-dirt: #adadad;
 $grey: #959595;
 $grey-dust: #e1e1e1;
 $grey-low: #666666;
 $grey-lowest: #545454;
 $grey-down: #8d8d8d;
 $grey-simple: #b5b5b5;
+$grey-hot: #e7e7e7;
 $grey-light: #dddddd;
 $grey-lighter: #e8e8e8;
 $grey-white: #f4f4f4;
@@ -37,3 +40,19 @@ $grey-white: #f4f4f4;
 $black: #000000;
 $black-dark: #1a1a1a;
 $black-grey: #1c1c1c;
+
+/*-- body colors --*/
+$body-color: $black;
+$body-bg: $white;
+
+/*-- page-header colors --*/
+$page-header-bg: $white-dark;
+
+/*-- main-nav colors --*/
+$main-nav__link-border: $grey-light;
+$main-nav__link-bg: $grey-hot;
+$main-nav__link-color: $grey-gloomy;
+
+/*-- toggle colors --*/
+$toggle__line-bg: $grey;
+$toggle__line-border: $grey-dirt;

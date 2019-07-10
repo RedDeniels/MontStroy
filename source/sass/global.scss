@@ -1,7 +1,17 @@
 body {
   position: relative;
   font-family: $default-font;
-  font-weight: 400;
   font-size: 15px;
+  line-height: 22px;
+  font-weight: normal;
+  color: $body-color;
+  background: $body-bg;
+}
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

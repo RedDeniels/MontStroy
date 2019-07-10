@@ -1,0 +1,27 @@
+.toggle__line {
+  display: block;
+  margin-bottom: 4px;
+  height: 2px;
+  width: 16px;
+  background-color: $toggle__line-bg;
+  border-left: solid;
+  border-right: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: $toggle__line-border;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {
+ 
+  .toggle__line {
+    width: 24px;
+    margin-bottom: 7px;
+  }
+  
+}

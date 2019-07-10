@@ -52,7 +52,14 @@ $page-header-bg: $white-dark;
 $main-nav__link-border: $grey-light;
 $main-nav__link-bg: $grey-hot;
 $main-nav__link-color: $grey-gloomy;
+$main-nav__link-desktop-color: $grey-hight;
+$main-nav__link-desktop-color-hover: $black;
 
 /*-- toggle variables --*/
 $toggle__line-bg: $grey;
 $toggle__line-border: $grey-dirt;
+
+/*-- button variables --*/
+$button--scroll-bg: $mint-white;
+$button--scroll-shadow: $mint-white;
+$button--scroll-color: $black;

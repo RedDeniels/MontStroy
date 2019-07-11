@@ -11,31 +11,6 @@
   }
 }
 
-.button--scroll__services {
-  box-sizing: border-box;
-  font-weight: 900;
-  line-height: 60px;
-  width: 280px;
-  min-height: 60px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.button--scroll__contacts {
-  box-sizing: border-box;
-  font-weight: 900;
-  line-height: 58px;
-  width: 280px;
-  min-height: 58px;
-  margin: 0 auto;
-  margin-bottom: 85px;
-  background-color: inherit;
-  color: $button--scroll__contacts-color;
-  border: solid 1px $button--scroll__contacts-border;
-  text-transform: uppercase;
-}
-
 /*-- Tablet --*/
 
 @media (min-width: $tablet-width) {}

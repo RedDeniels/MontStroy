@@ -1,5 +1,9 @@
-$default-font: "Roboto", "Arial", sans-serif;
-$caption-font: "Raleway", "Arial", sans-serif;
+$default-font: "Roboto",
+"Arial",
+sans-serif;
+$caption-font: "Raleway",
+"Arial",
+sans-serif;
 
 $tablet-width: 768px;
 $desktop-width: 1200px;
@@ -69,7 +73,12 @@ $button--scroll__contacts-color: $white;
 /*-- title variables --*/
 $title-color: $white;
 
+/*-- page-main variables --*/
+$page-main__background: $grey-black;
+
 /*-- main-banner variables --*/
-$main-banner__year: $mint-white;
-$main-banner__year--built: $black;
+$main-banner__year-color: $mint-white;
+$main-banner__year--built-color: $black;
+$main-banner__year--built-tablet-color: $mint-white;
 $main-banner__background-bg: $black;
+$main-banner__text-tablet-color: $white;

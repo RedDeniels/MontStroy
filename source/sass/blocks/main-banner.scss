@@ -1,0 +1,183 @@
+.main-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-banner__title {
+  width: 260px;
+  letter-spacing: 0.05em;
+
+  &--main {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 128px;
+    text-transform: uppercase;
+    line-height: 19px;
+  }
+}
+
+.main-banner__subtitle {
+  font-family: $default-font;
+  font-weight: normal;
+  width: 260px;
+  line-height: normal;
+
+  &--main {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+.main-banner__year {
+  font-weight: normal;
+  color: $main-banner__year-color;
+
+  &--built {
+    color: $main-banner__year--built-color;
+  }
+}
+
+.main-banner__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 85px;
+}
+
+.main-banner__link {
+  display: block;
+  box-sizing: border-box;
+  font-weight: 900;
+  width: 280px;
+  margin: 0 auto;
+
+  &--services {
+    line-height: 60px;
+    min-height: 60px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &--contacts {
+    line-height: 58px;
+    min-height: 58px;
+    background-color: inherit;
+    color: $button--scroll__contacts-color;
+    border: solid 1px $button--scroll__contacts-border;
+    text-transform: uppercase;
+  }
+}
+
+.main-banner__text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 274px;
+  margin: 0 auto;
+}
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {
+
+  .main-banner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .main-banner__title {
+    text-align: left;
+    font-size: 38px;
+    letter-spacing: 0.055em;
+    line-height: normal;
+    width: auto;
+    order: 0;
+
+    &--main {
+      margin-bottom: 20px;
+      margin-left: 61px;
+      margin-top: 125px;
+    }
+  }
+
+  .main-banner__subtitle {
+    display: none;
+  }
+
+  .main-banner__text {
+    font-size: 16px;
+    line-height: normal;
+    color: $main-banner__text-tablet-color;
+    width: 600px;
+    order: 1;
+
+    &--description {
+      margin: 0;
+      margin-bottom: 84px;
+      margin-left: 60px;
+    }
+  }
+
+  .main-banner__year--built {
+    color: $main-banner__year--built-tablet-color;
+  }
+
+  .main-banner__list {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .main-banner__link {
+    line-height: 53px;
+    min-height: 55px;
+    width: 290px;
+  }
+
+}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {
+
+  .main-banner__title {
+    font-size: 72px;
+    width: 100%;
+    letter-spacing: 0.05em;
+
+    &--main {
+      margin-bottom: 25px;
+      margin-left: 0;
+      margin-top: 150px;
+    }
+  }
+
+  .main-banner__text {
+    font-size: 24px;
+    line-height: 38px;
+    width: 1020px;
+    letter-spacing: 0.01em;
+
+    &--description {
+      margin-bottom: 52px;
+      margin-left: 0;
+    }
+  }
+
+  .main-banner__list {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .main-banner__item {
+    margin-right: 20px;
+  }
+
+  .main-banner__link {
+    font-size: 20px;
+    width: 300px;
+  }
+
+}

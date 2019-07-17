@@ -1,0 +1,97 @@
+.services {
+  margin-bottom: 5000px
+}
+
+.services__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.services__item {
+  display: none;
+  box-sizing: border-box;
+  width: 280px;
+  height: 200px;
+  padding-top: 118px;
+  margin: 0 auto;
+  border: 1px solid $services__item-border;
+  background-repeat: no-repeat;
+  background-position: center top 43px;
+
+  .service-quality:checked ~ .services__list &--quality {
+    background-image: url("../img/like-tablet.png");
+    display: block;
+  }
+
+  .service-deadline:checked ~ .services__list &--deadline {
+    background-image: url("../img/handshake-tablet.png");
+    display: block;
+  }
+
+  .service-base:checked ~ .services__list &--base {
+    background-image: url("../img/settings-tablet.png");
+    display: block;
+  }
+}
+
+.services__item-text {
+  display: block;
+  width: 155px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.services-control__item {
+  width: 11px;
+  height: 8px;
+}
+
+.services-control__toggle {
+  display: block;
+  position: relative;
+  background-color: $services-control__item-bg;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    top: -1px;
+    left: -3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: $services-control__item-active-bg;
+  }
+
+  .service-quality:checked ~ .services-control &--quality::after {
+    display: block;
+  }
+
+  .service-deadline:checked ~ .services-control &--deadline::after {
+    display: block;
+  }
+
+  .service-base:checked ~ .services-control &--base::after {
+    display: block;
+  }
+}

@@ -43,6 +43,7 @@ $grey-white: #f4f4f4;
 
 $black: #000000;
 $black-dark: #1a1a1a;
+$black-amber: #222222;
 $black-grey: #1c1c1c;
 
 /*-- body variables --*/
@@ -58,6 +59,7 @@ $main-nav__link-bg: $grey-hot;
 $main-nav__link-color: $grey-gloomy;
 $main-nav__link-desktop-color: $grey-hight;
 $main-nav__link-desktop-color-hover: $black;
+$main-nav__phone-color: $black-amber;
 
 /*-- toggle variables --*/
 $toggle__line-bg: $grey;

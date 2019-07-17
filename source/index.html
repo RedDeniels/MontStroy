@@ -13,7 +13,7 @@
     <nav class="main-nav">
       <a class="main-nav__logo main-nav__logo" href="#">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source class="main-nav__source" media="(min-width: 1200px)" srcset="img/logo-desktop.png">
           <img class="main-nav__logo-image" src="img/logo.png" width="86" height="37" alt="Логотип компании МонтСтрой">
         </picture>
       </a>
@@ -41,18 +41,18 @@
           <a class="main-nav__link" href="#">Контакты</a>
         </li>
       </ul>
-      <span class="main-nav__phone main-nav__phone--top"><b>+7 (495) 452-67-23</b></span>
-      <a class="button button--scroll main-nav__feedback">Обратная связь</a>
+      <a class="main-nav__phone main-nav__phone--top" href="tel:+74954526723">+7 (495) 452-67-23</a>
+      <input class="main-nav__toggle-feedback visual-hidden" id="main-feedback" type="button" name="feedback">
+      <label class="button button--scroll main-nav__feedback" for="main-feedback">Обратная связь</label>
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__background">
+    <div class="page-main__background page-main__gradient">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/banner-bg-desktop.webp">
         <source media="(min-width: 768px)" srcset="img/banner-bg-tablet.webp">
         <img class="page-main__image" src="img/banner-bg-mobile.webp" width="320" height="465" alt="Полный комплекс строительно-монтажных работ">
       </picture>
-      <div class="page-main__gradient"></div>
     </div>
     <div class="container">
       <section class="main-banner">

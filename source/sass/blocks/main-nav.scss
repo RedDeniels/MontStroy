@@ -14,6 +14,11 @@
   padding-left: 20px;
 }
 
+.main-nav__source {
+  font-size: 0;
+  line-height: 0;
+}
+
 .main-nav__logo-image {
   display: block;
   margin: 0 auto;
@@ -73,6 +78,8 @@
   display: none;
 }
 
+.main-nav__feedback {}
+
 .main-nav__feedback {
   display: none;
 }
@@ -111,6 +118,7 @@
 
   .main-nav__phone {
     display: block;
+    color: $main-nav__phone-color;
     line-height: 20px;
     font-size: 14px;
     font-weight: bold;

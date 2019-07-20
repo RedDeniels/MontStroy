@@ -42,20 +42,19 @@
         </li>
       </ul>
       <a class="main-nav__phone main-nav__phone--top" href="tel:+74954526723">+7 (495) 452-67-23</a>
-      <input class="main-nav__toggle-feedback visual-hidden" id="main-feedback" type="button" name="feedback">
-      <label class="button button--scroll main-nav__feedback" for="main-feedback">Обратная связь</label>
+      <bytton class="button button--scroll main-nav__feedback">Обратная связь</bytton>
     </nav>
   </header>
   <main class="page-main">
-    <div class="page-main__background page-main__gradient">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/banner-bg-desktop.webp">
-        <source media="(min-width: 768px)" srcset="img/banner-bg-tablet.webp">
-        <img class="page-main__image" src="img/banner-bg-mobile.webp" width="320" height="465" alt="Полный комплекс строительно-монтажных работ">
-      </picture>
-    </div>
-    <div class="container">
-      <section class="main-banner">
+    <section class="main-banner">
+      <div class="page-main__background page-main__gradient">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/banner-bg-desktop.webp">
+          <source media="(min-width: 768px)" srcset="img/banner-bg-tablet.webp">
+          <img class="page-main__image" src="img/banner-bg-mobile.webp" width="320" height="465" alt="Полный комплекс строительно-монтажных работ">
+        </picture>
+      </div>
+      <div class="container main-banner--container">
         <h1 class="title main-banner__title main-banner__title--main">Cтроительно-монтажные работы</h1>
         <h2 class="title main-banner__subtitle main-banner__subtitle--main">Работаем на российском рынке с&nbsp;<b class="main-banner__year">1992</b> года</h2>
         <ul class="main-banner__list">
@@ -67,8 +66,37 @@
           </li>
         </ul>
         <p class="main-banner__text main-banner__text--description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<b class="main-banner__year main-banner__year--built">1992</b> года, и&nbsp;за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и&nbsp;пуско-наладочных работ по&nbsp;электроснабжению зданий и сооружений.</p>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container features--container">
+        <input class="feature-quality visual-hidden" id="feature-quality" type="radio" name="toggle">
+        <input class="feature-deadline visual-hidden" id="feature-deadline" type="radio" name="toggle" checked>
+        <input class="feature-base visual-hidden" id="feature-base" type="radio" name="toggle">
+        <ul class="features__list">
+          <li class="features__item features__item--quality">
+            <span class="features__item-text features__item-text--quality">Гарантированное высокое качество продукции</span>
+          </li>
+          <li class="features__item features__item--deadline">
+            <span class="features__item-text features__item-text--deadline">Исполнение всех сроков и&nbsp;обязательств</span>
+          </li>
+          <li class="features__item features__item--base">
+            <span class="features__item-text features__item-text--dase">Собственная производственная база</span>
+          </li>
+        </ul>
+        <ul class="features-control">
+          <li class="features-control__item features-control__item--quality">
+            <label class="features-control__toggle features-control__toggle--quality" for="feature-quality">Первый слайд</label>
+          </li>
+          <li class="features-control__item features-control__item--deadline">
+            <label class="features-control__toggle features-control__toggle--deadline" for="feature-deadline">Второй слайд</label>
+          </li>
+          <li class="features-control__item features-control__item--base">
+            <label class="features-control__toggle features-control__toggle--base" for="feature-base">Третий слайд</label>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 </body>
 

@@ -1,6 +1,7 @@
-.main-banner {
+.main-banner--container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .main-banner__title {
@@ -80,9 +81,12 @@
 @media (min-width: $tablet-width) {
 
   .main-banner {
+    margin-bottom: 170px;
+  }
+
+  .main-banner--container {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 auto;
   }
 
   .main-banner__title {
@@ -142,6 +146,10 @@
 
 @media (min-width: $desktop-width) {
 
+  .main-banner {
+    margin-bottom: 100px;
+  }
+
   .main-banner__title {
     font-size: 72px;
     width: 100%;
@@ -161,7 +169,7 @@
     letter-spacing: 0.01em;
 
     &--description {
-      margin-bottom: 52px;
+      margin-bottom: 55px;
       margin-left: 0;
     }
   }

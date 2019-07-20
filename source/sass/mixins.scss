@@ -1,0 +1,30 @@
+/*-- services mixins --*/
+@mixin feature-check--tablet {
+  background-color: $features__item-active-bg;
+  width: 280px;
+  min-height: 200px;
+  padding-top: 118px;
+  z-index: 10;
+  opacity: 1;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  margin-left: -30px;
+  left: 15px;
+}
+
+@mixin feature--desktop {
+  color: $features__item-desktop;
+  opacity: 0.6;
+  background-color: inherit;
+  background-position: center top 23px;
+  z-index: 10;
+  font-size: 15px;
+  line-height: 20px;
+  width: auto;
+  padding-top: 100px;
+  margin-left: 0px;
+
+  min-height: 200px;
+  position: static;
+}

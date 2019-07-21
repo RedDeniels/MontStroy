@@ -179,6 +179,10 @@
 
 @media (min-width: $desktop-width) {
 
+  .features {
+    margin-bottom: 117px;
+  }
+
   .features__list {
     flex-direction: row;
     padding: 0;

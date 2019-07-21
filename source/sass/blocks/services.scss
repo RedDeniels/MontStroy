@@ -7,10 +7,9 @@
   font-size: 20px;
   color: $services__title;
   display: inline-block;
-  margin--top: 0;
+  margin-top: 0;
   margin-bottom: 25px;
   padding-left: 20px;
-
 }
 
 .services__list {
@@ -23,6 +22,27 @@
   position: relative;
   box-sizing: border-box;
   margin-bottom: 10px;
+}
+
+.services__item--active {
+  margin-bottom: 0;
+
+  & .services__chapter {
+    font-size: 16px;
+    background-color: $services__chapter--active-bg;
+    border: 1px solid $services__item-active;
+    box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
+
+    &::after {
+      border-top-color: $services__item-arrow-active;
+      top: 24px;
+    }
+  }
+
+  & .services__sublist {
+    display: block;
+    margin-top: 5px;
+  }
 }
 
 .services__chapter {
@@ -48,27 +68,6 @@
   }
 }
 
-.services__item--active {
-  margin-bottom: 0;
-
-  & .services__chapter {
-    font-size: 16px;
-    background-color: $services__chapter--active-bg;
-    border: 1px solid $services__item-active;
-    box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
-
-    &::after {
-      border-top-color: $services__item-arrow-active;
-      top: 24px;
-    }
-  }
-
-  & .services__sublist {
-    display: block;
-    margin-top: 5px;
-  }
-}
-
 .services__sublist {
   display: none;
   padding: 0;
@@ -79,6 +78,7 @@
   align-items: center;
   background-color: $services__subitem-mobile-bg;
   border-bottom: 1px solid $services__subitem-border;
+  border-top: 1px solid transparent;
   font-size: 12px;
   line-height: 16px;
   padding-left: 20px;
@@ -93,7 +93,55 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .services__title {
+    padding: 0;
+    font-size: 26px;
+    margin-bottom: 28px;
+  }
+
+  .services__list {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 335px;
+  }
+
+  .services__item {
+    width: 352px;
+    font-size: 14px;
+    line-height: 20px;
+    order: 2;
+  }
+
+  .services__item--active {
+    order: 1;
+
+    & .services__chapter {
+      border: none;
+      box-shadow: none;
+    }
+
+    & .services__subitem:hover {
+      z-index: 10;
+      border: 1px solid $services__subitem-active-border;
+      box-shadow: 0px 2px 6.3px 0.7px rgba(0, 255, 216, 0.65);
+      padding-left: 19px;
+      padding-right: 24px;
+    }
+
+    & .services__sublist {
+      margin-top: 3px;
+    }
+  }
+
+  .services__subitem {
+    width: 100%;
+    min-height: 47px;
+  }
+}
 
 /*-- Desktop --*/
 

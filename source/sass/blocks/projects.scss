@@ -1,0 +1,77 @@
+.projects {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 300px;
+}
+
+.projects__title {
+  padding-left: 0;
+}
+
+.projects__list {
+  margin: 0;
+  padding: 0;
+}
+
+.projects__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 100px;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+
+  &--futur {
+    background-image: url("../img/project-futur-mobile.jpg");
+  }
+
+  &--halo {
+    background-image: url("../img/project-halo-mobile.jpg");
+  }
+
+  &--family {
+    background-image: url("../img/project-family-mobile.jpg");
+  }
+
+  &--medial {
+    background-image: url("../img/project-medial-mobile.jpg");
+  }
+
+  &--energy {
+    background-image: url("../img/project-energy-mobile.jpg");
+  }
+
+  &--pinocchio {
+    background-image: url("../img/project-pinocchio-mobile.jpg");
+  }
+}
+
+
+
+.projects__caption {
+  font-family: $caption-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  color: $projects__caption;
+}
+
+.projects__text {
+  display: none;
+}
+
+.projects__arrow {
+  display: none;
+}
+
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {}

@@ -22,33 +22,31 @@
   min-height: 100px;
   margin-bottom: 10px;
   background-color: aquamarine;
-
-  &--futur {
-    background-image: url("../img/project-futur-mobile.jpg");
-  }
-
-  &--halo {
-    background-image: url("../img/project-halo-mobile.jpg");
-  }
-
-  &--family {
-    background-image: url("../img/project-family-mobile.jpg");
-  }
-
-  &--medial {
-    background-image: url("../img/project-medial-mobile.jpg");
-  }
-
-  &--energy {
-    background-image: url("../img/project-energy-mobile.jpg");
-  }
-
-  &--pinocchio {
-    background-image: url("../img/project-pinocchio-mobile.jpg");
-  }
 }
 
+.projects__item--futur {
+  background-image: url("../img/project-futur-mobile.jpg");
+}
 
+.projects__item--halo {
+  background-image: url("../img/project-halo-mobile.jpg");
+}
+
+.projects__item--family {
+  background-image: url("../img/project-family-mobile.jpg");
+}
+
+.projects__item--medial {
+  background-image: url("../img/project-medial-mobile.jpg");
+}
+
+.projects__item--energy {
+  background-image: url("../img/project-energy-mobile.jpg");
+}
+
+.projects__item--pinocchio {
+  background-image: url("../img/project-pinocchio-mobile.jpg");
+}
 
 .projects__caption {
   font-family: $caption-font;
@@ -70,7 +68,89 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .projects {
+    padding: 0;
+  }
+
+  .projects__title {
+    margin-bottom: 45px;
+  }
+
+  .projects__item {
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-height: 180px;
+    padding-top: 32px;
+    padding-left: 44px;
+    padding-right: 110px;
+    margin-bottom: 10px;
+  }
+
+  .projects__item--futur {
+    background-image: url("../img/project-futur-tablet.jpg");
+  }
+
+  .projects__item--halo {
+    background-image: url("../img/project-halo-tablet.jpg");
+    padding-top: 30px;
+
+    & .projects__caption {
+      margin-bottom: 5px;
+    }
+  }
+
+  .projects__item--family {
+    background-image: url("../img/project-family-tablet.jpg");
+    padding-top: 23px;
+    padding-right: 200px;
+
+    & .projects__caption {
+      margin-bottom: 3px;
+    }
+  }
+
+  .projects__item--medial {
+    background-image: url("../img/project-medial-tablet.jpg");
+    padding-top: 20px;
+    padding-right: 150px;
+
+    & .projects__caption {
+      margin-bottom: 3px;
+    }
+  }
+
+  .projects__item--energy {
+    background-image: url("../img/project-energy-tablet.jpg");
+  }
+
+  .projects__item--pinocchio {
+    background-image: url("../img/project-pinocchio-tablet.jpg");
+    padding-right: 50px;
+  }
+
+  .projects__caption {
+    font-family: $default-font;
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .projects__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    color: $projects__text;
+    opacity: 0.65;
+  }
+
+  .projects__text--hide {
+    display: none;
+  }
+
+}
 
 /*-- Desktop --*/
 

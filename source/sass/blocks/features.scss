@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 5000px
+  margin-bottom: 45px;
 }
 
 .features__list {
@@ -112,6 +112,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .features {
+    margin-bottom: 47px;
+  }
+
   .features__list {
     position: relative;
     display: flex;
@@ -174,6 +178,10 @@
 /*-- Desktop --*/
 
 @media (min-width: $desktop-width) {
+
+  .features {
+    margin-bottom: 117px;
+  }
 
   .features__list {
     flex-direction: row;

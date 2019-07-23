@@ -21,7 +21,6 @@
   width: 100%;
   min-height: 100px;
   margin-bottom: 10px;
-  background-color: aquamarine;
 }
 
 .projects__item--futur {
@@ -154,4 +153,149 @@
 
 /*-- Desktop --*/
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .projects__title {
+    margin-bottom: 35px;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .projects__item {
+    position: relative;
+    width: 290px;
+    min-height: 290px;
+    margin-bottom: 3px;
+    padding-top: 53px;
+    padding-left: 29px;
+    padding-right: 25px;
+  }
+
+  .projects__item:nth-child(4n + 6),
+  .projects__item:nth-child(4n + 5) {
+
+    width: 583px;
+    padding-top: 41px;
+    padding-right: 100px;
+
+    & .projects__caption {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 31px;
+    }
+
+    &.projects__item--pinocchio {
+      padding-right: 70px;
+    }
+  }
+
+  .projects__item--futur {
+    background-image: url("../img/project-futur-desktop.jpg");
+  }
+
+  .projects__item--halo {
+    background-image: url("../img/project-halo-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 10px;
+
+    & .projects__caption {
+      margin-bottom: 24px;
+    }
+  }
+
+  .projects__item--family {
+    background-image: url("../img/project-family-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 20px;
+
+    & .projects__caption {
+      margin-bottom: 24px;
+    }
+  }
+
+  .projects__item--medial {
+    background-image: url("../img/project-medial-desktop.jpg");
+    padding-top: 53px;
+    padding-right: 15px;
+
+    & .projects__caption {
+      margin-bottom: 45px;
+    }
+  }
+
+  .projects__item--energy {
+    background-image: url("../img/project-energy-desktop.jpg");
+  }
+
+  .projects__item--pinocchio {
+    background-image: url("../img/project-pinocchio-desktop.jpg");
+  }
+
+  .projects__caption {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+    margin-bottom: 47px;
+  }
+
+  .projects__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .projects__text--hide {
+    display: inline;
+  }
+
+  .projects__arrow {
+    display: block;
+    box-sizing: border-box;
+    height: 34px;
+    width: 46px;
+    border: 2px solid $projects__arrow;
+    opacity: 0.34;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 2px;
+      background-color: $projects__arrow;
+      top: 14px;
+      left: 13px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 10px;
+      top: 12px;
+      border: 3px solid transparent;
+      border-left: 5px solid $projects__arrow;
+    }
+
+    &:hover {
+      background-color: $projects__arrow-hover;
+      opacity: 1;
+      border-color: $projects__arrow-hover;
+    }
+
+    &:hover::before {
+      background-color: $projects__arrow-hover-bg;
+    }
+
+    &:hover::after {
+      border-left-color: $projects__arrow-hover-bg;
+    }
+  }
+}

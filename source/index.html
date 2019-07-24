@@ -68,11 +68,12 @@
         <p class="main-banner__text main-banner__text--description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<b class="main-banner__year main-banner__year--built">1992</b> года, и&nbsp;за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и&nbsp;пуско-наладочных работ по&nbsp;электроснабжению зданий и сооружений.</p>
       </div>
     </section>
-    <div class="container features--container">
+    <div class="container">
       <section class="features">
-        <input class="feature-quality visual-hidden" id="feature-quality" type="radio" name="toggle">
-        <input class="feature-deadline visual-hidden" id="feature-deadline" type="radio" name="toggle" checked>
-        <input class="feature-base visual-hidden" id="feature-base" type="radio" name="toggle">
+        <input class="feature-quality visual-hidden" id="feature-quality" type="radio" name="toggle__feature">
+        <input class="feature-deadline visual-hidden" id="feature-deadline" type="radio" name="toggle__feature" checked>
+        <input class="feature-base visual-hidden" id="feature-base" type="radio" name="toggle__feature">
+        <h2 class="features__title visual-hidden">Особенности</h2>
         <ul class="features__list">
           <li class="features__item features__item--quality">
             <span class="features__item-text features__item-text--quality">Гарантированное высокое качество продукции</span>
@@ -204,7 +205,37 @@
             <a class="projects__arrow">Узнать больше</a>
           </li>
         </ul>
-
+      </section>
+      <section class="partners">
+        <input class="partner-ava visual-hidden" id="partner-ava" type="radio" name="toggle__partners" checked>
+        <input class="partner-mirror visual-hidden" id="partner-mirror" type="radio" name="toggle__partners">
+        <input class="partner-shield visual-hidden" id="partner-shield" type="radio" name="toggle__partners">
+        <input class="partner-ntf visual-hidden" id="partner-ntf" type="radio" name="toggle__partners">
+        <h2 class="title partners__title title--blocks">Партнеры</h2>
+        <ul class="partners__list">
+          <li class="partners__item partners__item--ava">AVA company</li>
+          <li class="partners__item partners__item--mirror">Mirror business center</li>
+          <li class="partners__item partners__item--shield">Shield охранное предприятие</li>
+          <li class="partners__item partners__item--ntf">ЗАО "НТФ Теплодомэнерг"</li>
+        </ul>
+        <ul class="partners-control">
+          <li class="partners-control__item">
+            <label class="partners-control__toggle partners-control__toggle--min partners-control__toggle--ava" for="partner-ava">Первый слайд</label>
+          </li>
+          <li class="partners-control__item">
+            <label class="partners-control__toggle partners-control__toggle--mirror" for="partner-mirror">Второй слайд</label>
+          </li>
+          <li class="partners-control__item">
+            <label class="partners-control__toggle partners-control__toggle--shield" for="partner-shield">Третий слайд</label>
+          </li>
+          <li class="partners-control__item">
+            <label class="partners-control__toggle partners-control__toggle--min partners-control__toggle--ntf" for="partner-ntf">Четвертый слайд</label>
+          </li>
+        </ul>
+        <ul class="partners-arrow">
+          <li class="partners-arrow__back">Предыдущий партнер</li>
+          <li class="partners-arrow__next">Следующий партнер</li>
+        </ul>
       </section>
     </div>
   </main>

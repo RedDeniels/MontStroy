@@ -71,6 +71,7 @@
 
   .projects {
     padding: 0;
+    margin-bottom: 84px;
   }
 
   .projects__title {
@@ -154,6 +155,10 @@
 /*-- Desktop --*/
 
 @media (min-width: $desktop-width) {
+
+  .projects {
+    margin-bottom: 110px;
+  }
 
   .projects__title {
     margin-bottom: 35px;

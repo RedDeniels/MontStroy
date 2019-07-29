@@ -10,6 +10,10 @@
   padding-left: 21px;
 }
 
+.navigation__item--company {
+  display: none;
+}
+
 .navigation__link {
   cursor: pointer;
 
@@ -21,7 +25,31 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .navigation {
+    display: flex;
+    width: 495px;
+    justify-content: space-between;
+  }
+
+  .navigation__item {
+    padding-left: 0;
+    border: none;
+  }
+
+  .navigation__item--company {
+    padding-right: 10px;
+    display: block;
+    font-size: 12px;
+    line-height: 48px;
+  }
+
+  .navigation__link {
+    font-size: 12px;
+  }
+
+}
 
 /*-- Desktop --*/
 

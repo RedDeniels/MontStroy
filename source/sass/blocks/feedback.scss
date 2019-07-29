@@ -92,7 +92,41 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .feedback {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+  .feedback__title {
+    margin-bottom: 30px;
+  }
+
+  .feedback__form {
+    width: 310px;
+    margin: 0 auto;
+  }
+
+  .feedback__item {
+    margin-bottom: 29px;
+
+    &--phone {
+      width: 150px;
+    }
+
+    &--message {
+      margin-bottom: 13px;
+    }
+  }
+
+  .feedback__sub {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    width: 260px;
+  }
+
+}
 
 /*-- Desktop --*/
 

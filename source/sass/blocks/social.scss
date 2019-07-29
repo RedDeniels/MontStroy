@@ -38,7 +38,36 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .social {
+    padding-top: 18px;
+    margin-left: 36px;
+  }
+
+  .social__item {
+    margin-right: 18px;
+  }
+
+  .social__image {
+
+    &--vk {
+      width: 22px;
+      height: 14px;
+    }
+
+    &--tw {
+      width: 17px;
+      height: 14px;
+    }
+
+    &--fb {
+      width: 9px;
+      height: 16px;
+    }
+  }
+
+}
 
 /*-- Desktop --*/
 

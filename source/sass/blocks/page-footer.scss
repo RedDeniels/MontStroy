@@ -1,5 +1,6 @@
 .page-footer {
-  background-color: $page-footer-bg;
+  position: relative;
+  background-color: $page-footer-mobile-bg;
   color: $page-footer;
 }
 
@@ -29,3 +30,74 @@
   color: $page-footer__number--sign;
   opacity: 1;
 }
+
+.page-footer__company {
+  display: none;
+}
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {
+
+  .page-footer {
+    background-color: $page-footer-bg;
+    border-top: 2px solid $page-footer-border;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 65px;
+    padding-top: 8px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 640px;
+      height: 1px;
+      background-color: $page-footer-line;
+      opacity: 0.1;
+
+      bottom: 75px;
+    }
+  }
+
+  .page-footer__feedback {
+    position: absolute;
+    width: 413px;
+    left: 65px;
+    top: -118px;
+    z-index: 10;
+    padding-bottom: 38px;
+  }
+
+  .page-footer__contacts {
+    order: 1;
+    margin-left: 430px;
+    margin-right: auto;
+    margin-bottom: 65px;
+  }
+
+  .page-footer__item--address {
+    margin-bottom: 42px;
+  }
+
+  .page-footer__item--email {
+    margin-bottom: 42px;
+  }
+
+  .page-footer__navigation {
+    order: 3;
+  }
+
+  .page-footer__social {
+    order: 4;
+  }
+
+  .page-footer__copyright {
+    order: 5;
+    width: 100%;
+  }
+
+}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {}

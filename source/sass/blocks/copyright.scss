@@ -5,18 +5,31 @@
   line-height: 14px;
   color: $copyright;
   padding-top: 15px;
-
 }
 
 .copyright__text {
   opacity: 0.33;
   margin: 0 auto;
   text-align: center;
+  width: 200px;
 }
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+
+  .copyright {
+    padding-top: 7px;
+  }
+
+  .copyright__text {
+    padding-right: 52px;
+    width: 340px;
+    letter-spacing: 0.04em;
+  }
+
+
+}
 
 /*-- Desktop --*/
 

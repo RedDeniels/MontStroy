@@ -6,9 +6,17 @@
   <title>MontStroy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <script src="js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+
+  </script>
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav">
       <a class="main-nav__logo main-nav__logo" href="#">
@@ -59,10 +67,10 @@
         <h3 class="title main-banner__subtitle main-banner__subtitle--main">Работаем на российском рынке с&nbsp;<b class="main-banner__year">1992</b> года</h3>
         <ul class="main-banner__list">
           <li class="main-banner__item">
-            <a class="button button--scroll main-banner__link main-banner__link--services">Наши услуги</a>
+            <a class="button button--scroll main-banner__link main-banner__link--services" href="#">Наши услуги</a>
           </li>
           <li class="main-banner__item">
-            <a class="button button--scroll main-banner__link main-banner__link--contacts">Связаться с нами</a>
+            <a class="button button--scroll main-banner__link main-banner__link--contacts" href="#">Связаться с нами</a>
           </li>
         </ul>
         <p class="main-banner__text main-banner__text--description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с&nbsp;<b class="main-banner__year main-banner__year--built">1992</b> года, и&nbsp;за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных и&nbsp;пуско-наладочных работ по&nbsp;электроснабжению зданий и сооружений.</p>
@@ -176,33 +184,33 @@
           <li class="projects__item projects__item--futur">
             <h3 class="projects__caption">Стадион «Футур»</h3>
             <p class="projects__text">В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
           <li class="projects__item projects__item--halo">
             <h3 class="projects__caption">Бизнес-центр «Ореол»</h3>
             <p class="projects__text">Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
           <li class="projects__item projects__item--family">
             <h3 class="projects__caption">Кинотеатр «Семейный»</h3>
             <p class="projects__text">Специалисты выполнили комплекс работ по системам учета электроэнергии</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
           <li class="projects__item projects__item--medial">
             <h3 class="projects__caption">ТК «Medial»</h3>
             <p class="projects__text">В целях обеспечения электроэнергией телевизионного комплекса было осуществлено строительство распределительной сети мощностью 20кВ</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
           <li class="projects__item projects__item--energy">
             <h3 class="projects__caption">ОАО «ЭнергоНацКомпани»</h3>
             <p class="projects__text">Компанией были выполнены строительно-монтажные и пусконаладочные работы<span class="projects__text--hide">, а также поставлены материалы
                 и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ</span> для ОАО «ЭнергоНацКомпани»</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
           <li class="projects__item projects__item--pinocchio">
             <h3 class="projects__caption">Театр «Буратино»</h3>
             <p class="projects__text">Специалистами были проведены комплексные электро‑монтажные и&nbsp;пуско-наладочные работы по механизации сценических подъемников в&nbsp;здании театра</p>
-            <a class="projects__arrow">Узнать больше</a>
+            <a class="projects__arrow" href="#">Узнать больше</a>
           </li>
         </ul>
       </section>
@@ -238,18 +246,121 @@
         </ul>
       </section>
     </div>
-    <section class="contacts">
-      <h2 class="title contacts__title title--blocks">Контакты</h2>
-      <div class="contacts__map-container">
-        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CChxzYnf" width="560" height="400"></iframe>
-        <picture class="contacts__map--image">
+    <section class="map">
+      <h2 class="title map__title title--blocks">Контакты</h2>
+      <div class="map__container">
+        <iframe class="map__live" src="https://yandex.ru/map-widget/v1/-/CChxzYnf" width="560" height="400"></iframe>
+        <picture>
           <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
-          <img class="contacts__image" src="img/map-mobile.jpg" width="320" height="211" alt="г.Москва, Варшавское шоссе, 118к1">
+          <img class="map__image" src="img/map-mobile.jpg" width="320" height="211" alt="г.Москва, Варшавское шоссе, 118к1">
         </picture>
       </div>
     </section>
+    <div class="contacts map__contacts">
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--address">
+          <svg class="contacts__icon contacts__icon--address" width="16" height="12">
+            <use xlink:href="img/sprite.svg#icon-pin"></use>
+          </svg>Варшавское шоссе, д,&nbsp;118,&nbsp;к.1 Бизнес-центр «<span class="contacts__upper">Варшавка</span> Sky»</li>
+        <li class="contacts__item contacts__item--email">
+          <svg class="contacts__icon contacts__icon--email">
+            <use xlink:href="img/sprite.svg#icon-letter"></use>
+          </svg>
+          <a class="contacts__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a></li>
+        <li class="contacts__item contacts__item--phone">
+          <svg class="contacts__icon contacts__icon--phone">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <a class="contacts__number" href="tel:+74954526723">+7 (495) 452-67-23</a>
+          <span class="contacts__number--sign">Ежедневно с 9:00 до 18:00</span>
+        </li>
+      </ul>
+    </div>
   </main>
+
+  <footer class="page-footer">
+    <section class="feedback page-footer__feedback">
+      <h2 class="title feedback__title">Свяжитесь с нами</h2>
+      <form class="feedback__form">
+        <ul class="feedback__list">
+          <li class="feedback__item feedback__item--name">
+            <input class="feedback__text feedback__text--name" id="feedback__name" type="text" name="text__name" required>
+            <label class="feedback__caption feedback__caption--name" for="feedback__name">Имя</label>
+          </li>
+          <li class="feedback__item feedback__item--phone">
+            <input class="feedback__text feedback__text--phone" id="feedback__phone" type="tel" name="text__phone" pattern="[7-8]-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <label class="feedback__caption feedback__caption--phone" for="feedback__phone">Телефон</label>
+          </li>
+          <li class="feedback__item feedback__item--email">
+            <input class="feedback__text feedback__text--email" id="feedback__email" type="email" name="text__email" required>
+            <label class="feedback__caption feedback__caption--email" for="feedback__email">E-mail</label>
+          </li>
+          <li class="feedback__item feedback__item--message">
+            <input class="feedback__text feedback__text--message" id="feedback__message" type="text" name="text__name">
+            <label class="feedback__caption feedback__caption--message" for="feedback__message">Сообщение</label>
+          </li>
+        </ul>
+        <p class="feedback__sub">Заполняя форму на сайте, вы соглашаетесь с нашей <a class="feedback__confident" href="#">Политикой конфиденциальности</a></p>
+        <button class="button feedback__submit" type="submit">Отправить</button>
+      </form>
+    </section>
+    <ul class="page-footer__navigation navigation">
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Услуги</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Проекты</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Партнеры</a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <div class="contacts page-footer__contacts">
+      <ul class="contacts__list contacts__list--page-footer">
+        <li class="contacts__item contacts__item--address page-footer__item--address">
+          <svg class="contacts__icon contacts__icon--address" width="16" height="12">
+            <use xlink:href="img/sprite.svg#icon-pin"></use>
+          </svg>Варшавское шоссе, д,&nbsp;118,&nbsp;к.1 Бизнес-центр «<span class="contacts__upper">Варшавка</span> Sky»</li>
+        <li class="contacts__item contacts__item--email page-footer__item--email">
+          <svg class="contacts__icon contacts__icon--email">
+            <use xlink:href="img/sprite.svg#icon-letter"></use>
+          </svg>
+          <a class="contacts__email page-footer__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a></li>
+        <li class="contacts__item contacts__item--phone">
+          <svg class="contacts__icon contacts__icon--phone">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <a class="contacts__number page-footer__number" href="tel:+74954526723">+7 (495) 452-67-23</a>
+          <span class="contacts__number--sign page-footer__number--sign">Ежедневно с 9:00 до 18:00</span>
+        </li>
+      </ul>
+    </div>
+    <ul class="social page-footer__social">
+      <li class="social__item social__item--vk">
+        <a class="social__link" href="#">
+          <img class="social__image social__image--vk" src="img/icon-vk.png" width="41" height="25" alt="VK">VK
+        </a>
+      </li>
+      <li class="social__item social__item--tw">
+        <a class="social__link" href="#">
+          <img class="social__image social__image--tw" src="img/icon-tw.png" width="31" height="26" alt="Twitter">Twitter
+        </a>
+      </li>
+      <li class="social__item social__item--fb">
+        <a class="social__link" href="#">
+          <img class="social__image social__image--fb" src="img/icon-fb.png" width="15" height="29" alt="Facebook">Facebook
+        </a>
+      </li>
+    </ul>
+    <div class="copyright page-footer__copyright">
+      <p class="copyright__text">1992-2018 © ЗАО “НСП ”МонтСтрой”<br>Все права защищены</p>
+    </div>
+  </footer>
+
   <script src="js/app.js"></script>
 </body>
 

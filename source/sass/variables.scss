@@ -10,7 +10,7 @@ $desktop-width: 1200px;
 
 /*-- colors --*/
 
-$mint: #00ffd8;
+$mint: #00ffd7;
 $mint-light: #b2fff3;
 $mint-white: #00ffd8;
 $mint-dot: #00f7d0;
@@ -116,3 +116,37 @@ $projects__arrow-hover-bg: $grey-lowest;
 $partners__item-border: $grey-hot;
 $partners-control__item-bg: $grey-light;
 $partners-control__item-active-bg: $mint;
+
+/*-- map variables --*/
+$map__contacts-border: $mint;
+$map__contacts-bg: $black;
+
+/*-- contacts variables --*/
+$contacts: $white;
+$contacts__number: $white;
+$contacts__email: $white;
+
+/*-- page-footer variables --*/
+$page-footer-bg: $black-dark;
+$page-footer: $grey-low;
+$page-footer__number: $grey-low;
+$page-footer__email: $grey-low;
+$page-footer__number--sign: $grey-low;
+
+/*-- feedback variables --*/
+$feedback-bg: $white;
+$feedback__title: $black;
+$feedback__text-border: $grey-dust;
+$feedback__submit: $white;
+$feedback__submit-bg: $black;
+$feedback__confident-border: $black;
+
+/*-- feedback variables --*/
+$navigation__item-border: $grey-low;
+
+/*-- feedback variables --*/
+$social__item-after-bg: $black-dark;
+
+/*-- feedback variables --*/
+$copyright: $white;
+$copyright-bg: $black;

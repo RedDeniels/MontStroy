@@ -1,0 +1,23 @@
+.copyright {
+  background-color: $copyright-bg;
+  min-height: 51px;
+  font-size: 10px;
+  line-height: 14px;
+  color: $copyright;
+  padding-top: 15px;
+
+}
+
+.copyright__text {
+  opacity: 0.33;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {}

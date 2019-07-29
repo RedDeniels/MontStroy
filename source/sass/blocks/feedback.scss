@@ -1,0 +1,99 @@
+.feedback {
+  background-color: $feedback-bg;
+  padding-top: 42px;
+  padding-bottom: 60px;
+}
+
+.feedback__title {
+  color: $feedback__title;
+  font-size: 18px;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.feedback__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  min-height: 40px;
+  margin-bottom: 25px;
+
+  &--name {
+    width: 120px;
+  }
+
+  &--phone {
+    width: 120px;
+  }
+
+  &--email {
+    width: 100%;
+    margin-bottom: 31px;
+  }
+
+  &--message {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.feedback__text {
+  border: none;
+  border-bottom: 1px solid $feedback__text-border;
+}
+
+.feedback__caption {}
+
+.feedback__sub {
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  opacity: 0.5;
+  margin-bottom: 32px;
+}
+
+.feedback__confident {
+  border-bottom: 1px dotted $feedback__confident-border;
+  margin-bottom: 20px;
+}
+
+.feedback__submit {
+  background-color: $feedback__submit-bg;
+  color: $feedback__submit;
+  font-size: 16px;
+  line-height: 35px;
+  font-family: $caption-font;
+  font-weight: bold;
+  width: 164px;
+  height: 43px;
+  margin: 0 auto;
+  padding-bottom: 3px;
+}
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {}

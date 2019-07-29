@@ -1,0 +1,31 @@
+.page-footer {
+  background-color: $page-footer-bg;
+  color: $page-footer;
+}
+
+.page-footer__contacts {
+  color: $grey-low;
+  margin-bottom: 16px;
+}
+
+.page-footer__item--address {
+  line-height: 29px;
+  margin-bottom: 17px;
+}
+
+.page-footer__item--email {
+  margin-bottom: 25px;
+}
+
+.page-footer__number {
+  color: $page-footer__number;
+}
+
+.page-footer__email {
+  color: $page-footer__email;
+}
+
+.page-footer__number--sign {
+  color: $page-footer__number--sign;
+  opacity: 1;
+}

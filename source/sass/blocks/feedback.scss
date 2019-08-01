@@ -130,4 +130,68 @@
 
 /*-- Desktop --*/
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+
+  .feedback {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+
+  .feedback__title {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .feedback__form {
+    width: 430px;
+    margin: 0 auto;
+  }
+
+  .feedback__list {
+    width: 400px;
+  }
+
+  .feedback__item {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 13px;
+    margin-bottom: 29px;
+    letter-spacing: 0.04em;
+
+    &--name {
+      width: 180px;
+    }
+
+    &--phone {
+      width: 180px;
+    }
+
+    &--email {
+      margin-bottom: 37px;
+    }
+
+    &--message {
+      margin-bottom: 25px;
+    }
+  }
+
+  .feedback__caption {
+    margin-bottom: 6px;
+  }
+
+  .feedback__sub {
+    font-size: 12px;
+    line-height: 18px;
+    width: 300px;
+    margin-bottom: 37px;
+  }
+
+  .feedback__submit {
+    font-size: 26px;
+    line-height: 50px;
+    width: 230px;
+    height: 64px;
+    border-bottom: 3px solid $feedback__submit-border;
+  }
+}

@@ -280,87 +280,89 @@
   </main>
 
   <footer class="page-footer">
-    <section class="feedback page-footer__feedback">
-      <h2 class="title feedback__title">Свяжитесь с нами</h2>
-      <form class="feedback__form">
-        <ul class="feedback__list">
-          <li class="feedback__item feedback__item--name">
-            <input class="feedback__text feedback__text--name" id="feedback__name" type="text" name="text__name" required>
-            <label class="feedback__caption feedback__caption--name" for="feedback__name">Имя</label>
-          </li>
-          <li class="feedback__item feedback__item--phone">
-            <input class="feedback__text feedback__text--phone" id="feedback__phone" type="tel" name="text__phone" pattern="[7-8]-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-            <label class="feedback__caption feedback__caption--phone" for="feedback__phone">Телефон</label>
-          </li>
-          <li class="feedback__item feedback__item--email">
-            <input class="feedback__text feedback__text--email" id="feedback__email" type="email" name="text__email" required>
-            <label class="feedback__caption feedback__caption--email" for="feedback__email">E-mail</label>
-          </li>
-          <li class="feedback__item feedback__item--message">
-            <input class="feedback__text feedback__text--message" id="feedback__message" type="text" name="text__name">
-            <label class="feedback__caption feedback__caption--message" for="feedback__message">Сообщение</label>
-          </li>
-        </ul>
-        <p class="feedback__sub">Заполняя форму на сайте, вы соглашаетесь с нашей <a class="feedback__confident" href="#">Политикой конфиденциальности</a></p>
-        <button class="button feedback__submit" type="submit">Отправить</button>
-      </form>
-    </section>
-    <ul class="page-footer__navigation navigation">
-      <li class="navigation__item navigation__item--company">
-        <a class="navigation__link" href="#">ЗАО «НCП «МонтCтрой»</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">Услуги</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">Проекты</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">Партнеры</a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="#">Контакты</a>
-      </li>
-    </ul>
-    <div class="contacts page-footer__contacts">
-      <ul class="contacts__list contacts__list--page-footer">
-        <li class="contacts__item contacts__item--address page-footer__item--address">
-          <svg class="contacts__icon contacts__icon--address" width="16" height="12">
-            <use xlink:href="img/sprite.svg#icon-pin"></use>
-          </svg>Варшавское шоссе, д,&nbsp;118,&nbsp;к.1 Бизнес-центр «<span class="contacts__upper">Варшавка</span> Sky»</li>
-        <li class="contacts__item contacts__item--email page-footer__item--email">
-          <svg class="contacts__icon contacts__icon--email">
-            <use xlink:href="img/sprite.svg#icon-letter"></use>
-          </svg>
-          <a class="contacts__email page-footer__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a></li>
-        <li class="contacts__item contacts__item--phone">
-          <svg class="contacts__icon contacts__icon--phone">
-            <use xlink:href="img/sprite.svg#icon-phone"></use>
-          </svg>
-          <a class="contacts__number page-footer__number" href="tel:+74954526723">+7 (495) 452-67-23</a>
-          <span class="contacts__number--sign page-footer__number--sign">Ежедневно с 9:00 до 18:00</span>
+    <div class="page-footer__container">
+      <section class="feedback page-footer__feedback">
+        <h2 class="title feedback__title">Свяжитесь с нами</h2>
+        <form class="feedback__form">
+          <ul class="feedback__list">
+            <li class="feedback__item feedback__item--name">
+              <input class="feedback__text feedback__text--name" id="feedback__name" type="text" name="text__name" required>
+              <label class="feedback__caption feedback__caption--name" for="feedback__name">Имя</label>
+            </li>
+            <li class="feedback__item feedback__item--phone">
+              <input class="feedback__text feedback__text--phone" id="feedback__phone" type="tel" name="text__phone" pattern="[7-8]-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <label class="feedback__caption feedback__caption--phone" for="feedback__phone">Телефон</label>
+            </li>
+            <li class="feedback__item feedback__item--email">
+              <input class="feedback__text feedback__text--email" id="feedback__email" type="email" name="text__email" required>
+              <label class="feedback__caption feedback__caption--email" for="feedback__email">E-mail</label>
+            </li>
+            <li class="feedback__item feedback__item--message">
+              <input class="feedback__text feedback__text--message" id="feedback__message" type="text" name="text__name">
+              <label class="feedback__caption feedback__caption--message" for="feedback__message">Сообщение</label>
+            </li>
+          </ul>
+          <p class="feedback__sub">Заполняя форму на сайте, вы соглашаетесь с нашей <a class="feedback__confident" href="#">Политикой конфиденциальности</a></p>
+          <button class="button feedback__submit" type="submit">Отправить</button>
+        </form>
+      </section>
+      <ul class="page-footer__navigation navigation">
+        <li class="navigation__item navigation__item--company">
+          <a class="navigation__link" href="#">ЗАО «НCП «МонтCтрой»</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Услуги</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Проекты</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Партнеры</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Контакты</a>
         </li>
       </ul>
-    </div>
-    <ul class="social page-footer__social">
-      <li class="social__item social__item--vk">
-        <a class="social__link" href="#">
-          <img class="social__image social__image--vk" src="img/icon-vk.png" width="41" height="25" alt="VK">VK
-        </a>
-      </li>
-      <li class="social__item social__item--tw">
-        <a class="social__link" href="#">
-          <img class="social__image social__image--tw" src="img/icon-tw.png" width="31" height="26" alt="Twitter">Twitter
-        </a>
-      </li>
-      <li class="social__item social__item--fb">
-        <a class="social__link" href="#">
-          <img class="social__image social__image--fb" src="img/icon-fb.png" width="15" height="29" alt="Facebook">Facebook
-        </a>
-      </li>
-    </ul>
-    <div class="copyright page-footer__copyright">
-      <p class="copyright__text">1992-2018 © ЗАО “НСП ”МонтСтрой” Все&nbsp;права&nbsp;защищены</p>
+      <div class="contacts page-footer__contacts">
+        <ul class="contacts__list contacts__list--page-footer">
+          <li class="contacts__item contacts__item--address page-footer__item--address">
+            <svg class="contacts__icon contacts__icon--address" width="16" height="12">
+              <use xlink:href="img/sprite.svg#icon-pin"></use>
+            </svg>Варшавское шоссе, д,&nbsp;118,&nbsp;к.1 Бизнес-центр «<span class="contacts__upper">Варшавка</span> Sky»</li>
+          <li class="contacts__item contacts__item--email page-footer__item--email">
+            <svg class="contacts__icon contacts__icon--email">
+              <use xlink:href="img/sprite.svg#icon-letter"></use>
+            </svg>
+            <a class="contacts__email page-footer__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a></li>
+          <li class="contacts__item contacts__item--phone">
+            <svg class="contacts__icon contacts__icon--phone">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="contacts__number page-footer__number" href="tel:+74954526723">+7 (495) 452-67-23</a>
+            <span class="contacts__number--sign page-footer__number--sign">Ежедневно с 9:00 до 18:00</span>
+          </li>
+        </ul>
+      </div>
+      <ul class="social page-footer__social">
+        <li class="social__item social__item--vk">
+          <a class="social__link" href="#">
+            <img class="social__image social__image--vk" src="img/icon-vk.png" width="41" height="25" alt="VK">VK
+          </a>
+        </li>
+        <li class="social__item social__item--tw">
+          <a class="social__link" href="#">
+            <img class="social__image social__image--tw" src="img/icon-tw.png" width="31" height="26" alt="Twitter">Twitter
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a class="social__link" href="#">
+            <img class="social__image social__image--fb" src="img/icon-fb.png" width="15" height="29" alt="Facebook">Facebook
+          </a>
+        </li>
+      </ul>
+      <div class="copyright page-footer__copyright">
+        <p class="copyright__text">1992-2018 © ЗАО “НСП ”МонтСтрой” Все&nbsp;права&nbsp;защищены</p>
+      </div>
     </div>
   </footer>
 

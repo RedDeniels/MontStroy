@@ -23,7 +23,7 @@
   }
 
   .copyright__text {
-    padding-right: 52px;
+    padding-right: 16px;
     width: 340px;
     letter-spacing: 0.04em;
   }
@@ -33,4 +33,11 @@
 
 /*-- Desktop --*/
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .copyright {
+    padding-right: 40px;
+    width: 540px;
+  }
+
+}

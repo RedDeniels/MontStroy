@@ -21,11 +21,11 @@
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 12px;
-}
 
-.contacts__item--email {
-  cursor: pointer;
-  padding-left: 3px;
+  &--email {
+    cursor: pointer;
+    padding-left: 3px;
+  }
 }
 
 .contacts__upper {
@@ -69,8 +69,24 @@
 
 /*-- Tablet --*/
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .contacts__list--page-footer {
+    padding-top: 23px;
+  }
+}
 
 /*-- Desktop --*/
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .contacts__list--page-footer {
+    padding-top: 57px;
+    padding-left: 110px;
+  }
+
+  .contacts__item {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+}

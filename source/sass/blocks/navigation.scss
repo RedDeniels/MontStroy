@@ -36,13 +36,13 @@
   .navigation__item {
     padding-left: 0;
     border: none;
-  }
 
-  .navigation__item--company {
-    padding-right: 10px;
-    display: block;
-    font-size: 12px;
-    line-height: 48px;
+    &--company {
+      padding-right: 10px;
+      display: block;
+      font-size: 12px;
+      line-height: 48px;
+    }
   }
 
   .navigation__link {
@@ -53,4 +53,42 @@
 
 /*-- Desktop --*/
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+
+  .navigation {
+    padding-left: 15px;
+    padding-bottom: 20px;
+    width: 295px;
+  }
+
+  .navigation__item {
+    display: none;
+  }
+
+  .navigation__link {
+    color: $navigation__link;
+    font-size: 16px;
+    line-height: 38px;
+
+    &:visited {
+      color: $navigation__link;
+    }
+  }
+
+  .navigation__item--company {
+    margin-top: 170px;
+    display: block;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 141px;
+      height: 60px;
+      background-image: url("../img/logo-desktop.png");
+      bottom: 90px;
+      left: 0;
+
+    }
+  }
+}

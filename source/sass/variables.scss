@@ -122,9 +122,14 @@ $map__contacts-border: $mint;
 $map__contacts-bg: $black;
 
 /*-- contacts variables --*/
-$contacts: $white;
-$contacts__number: $white;
-$contacts__email: $white;
+$contacts: $grey-low;
+$contacts-desktop: $white;
+$contacts__email: $grey-low;
+$contacts__email-desktop: $white;
+$contacts__number: $grey-low;
+$contacts__number-desktop: $white;
+$contacts__number--sign: $grey-low;
+$contacts__number--sign-desktop: $white;
 
 /*-- page-footer variables --*/
 $page-footer-mobile-bg: $black-dark;
@@ -132,11 +137,9 @@ $page-footer-bg: $black;
 $page-footer: $grey-low;
 $page-footer-border: $mint;
 $page-footer-line: $white;
-$page-footer__number: $grey-low;
-$page-footer__email: $grey-low;
-$page-footer__number--sign: $grey-low;
 
 /*-- feedback variables --*/
+$feedback: $grey-low;
 $feedback-bg: $white;
 $feedback__title: $black;
 $feedback__text-border: $grey-dust;

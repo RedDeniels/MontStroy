@@ -63,6 +63,7 @@
 }
 
 .contacts__number--sign {
+  color: $contacts__number--sign;
   font-size: 12px;
   opacity: 0.6;
 }
@@ -79,6 +80,10 @@
 
 @media (min-width: $desktop-width) {
 
+  .contacts {
+    color: $contacts-desktop;
+  }
+
   .contacts__list--page-footer {
     padding-top: 57px;
     padding-left: 110px;
@@ -87,6 +92,18 @@
   .contacts__item {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .contacts__email {
+    color: $contacts__email-desktop;
+  }
+
+  .contacts__number {
+    color: $contacts__number-desktop;
+  }
+
+  .contacts__number--sign {
+    color: $contacts__number--sign-desktop;
   }
 
 }

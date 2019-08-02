@@ -10,7 +10,7 @@ $desktop-width: 1200px;
 
 /*-- colors --*/
 
-$mint: #00ffd8;
+$mint: #00ffd7;
 $mint-light: #b2fff3;
 $mint-white: #00ffd8;
 $mint-dot: #00f7d0;
@@ -111,3 +111,50 @@ $projects__text: $white;
 $projects__arrow: $white;
 $projects__arrow-hover: $mint-white;
 $projects__arrow-hover-bg: $grey-lowest;
+
+/*-- partners variables --*/
+$partners__item-border: $grey-hot;
+$partners-control__item-bg: $grey-light;
+$partners-control__item-active-bg: $mint;
+
+/*-- map variables --*/
+$map__contacts-border: $mint;
+$map__contacts-bg: $black;
+
+/*-- contacts variables --*/
+$contacts: $grey-low;
+$contacts-desktop: $white;
+$contacts__email: $grey-low;
+$contacts__email-desktop: $white;
+$contacts__number: $grey-low;
+$contacts__number-desktop: $white;
+$contacts__number--sign: $grey-low;
+$contacts__number--sign-desktop: $white;
+
+/*-- page-footer variables --*/
+$page-footer-mobile-bg: $black-dark;
+$page-footer-bg: $black;
+$page-footer: $grey-low;
+$page-footer-border: $mint;
+$page-footer-line: $white;
+
+/*-- feedback variables --*/
+$feedback: $grey-low;
+$feedback-bg: $white;
+$feedback__title: $black;
+$feedback__text-border: $grey-dust;
+$feedback__submit: $white;
+$feedback__submit-bg: $black;
+$feedback__confident-border: $black;
+$feedback__submit-border: $grey-simple;
+
+/*-- feedback variables --*/
+$navigation__item-border: $grey-low;
+$navigation__link: $white;
+
+/*-- feedback variables --*/
+$social__item-after-bg: $black-dark;
+
+/*-- feedback variables --*/
+$copyright: $white;
+$copyright-bg: $black;

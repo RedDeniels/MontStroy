@@ -1,0 +1,94 @@
+.navigation {
+  font-size: 14px;
+  line-height: 49px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  border-bottom: 1px solid $navigation__item-border;
+  padding-left: 21px;
+}
+
+.navigation__item--company {
+  display: none;
+}
+
+.navigation__link {
+  cursor: pointer;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+
+/*-- Tablet --*/
+
+@media (min-width: $tablet-width) {
+
+  .navigation {
+    display: flex;
+    width: 495px;
+    justify-content: space-between;
+  }
+
+  .navigation__item {
+    padding-left: 0;
+    border: none;
+
+    &--company {
+      padding-right: 10px;
+      display: block;
+      font-size: 12px;
+      line-height: 48px;
+    }
+  }
+
+  .navigation__link {
+    font-size: 12px;
+  }
+
+}
+
+/*-- Desktop --*/
+
+@media (min-width: $desktop-width) {
+
+  .navigation {
+    padding-left: 15px;
+    padding-bottom: 20px;
+    width: 295px;
+  }
+
+  .navigation__item {
+    display: none;
+  }
+
+  .navigation__link {
+    color: $navigation__link;
+    font-size: 16px;
+    line-height: 38px;
+
+    &:visited {
+      color: $navigation__link;
+    }
+  }
+
+  .navigation__item--company {
+    margin-top: 170px;
+    display: block;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 141px;
+      height: 60px;
+      background-image: url("../img/logo-desktop.png");
+      bottom: 90px;
+      left: 0;
+
+    }
+  }
+}

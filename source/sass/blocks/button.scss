@@ -1,11 +1,16 @@
-.button--scroll {
+.button {
   text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.button--scroll {
   font-size: 16px;
   font-weight: 500;
   line-height: 45px;
   color: $button--scroll-color;
   background-color: $button--scroll-bg;
-  cursor: pointer;
 
   &:hover {
     box-shadow: 0px 2px 4.75px 0.25px $button--scroll-shadow;

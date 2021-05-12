@@ -19,7 +19,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.2.0",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
